@@ -31,7 +31,7 @@ public class EmployeeBook {
 
     public void printMinSalary() {
         int id = 0;
-        double minSalary = employees[1].getSalary();
+        double minSalary = Double.MAX_VALUE;
         for (int i = 0; i < size; i++) {
             if (employees[i].getSalary() < minSalary) {
                 minSalary = employees[i].getSalary();
@@ -43,7 +43,7 @@ public class EmployeeBook {
 
     public void printMaxSalary() {
         int id = 0;
-        double maxSalary = employees[1].getSalary();
+        double maxSalary = Double.MIN_VALUE;
         for (int i = 0; i < size; i++) {
             if (employees[i].getSalary() > maxSalary) {
                 maxSalary = employees[i].getSalary();

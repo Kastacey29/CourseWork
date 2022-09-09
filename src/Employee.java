@@ -2,8 +2,8 @@ public class Employee {
     private final String fullName;
     private int department;
     private double salary;
-    private int counter;
-    private int id = counter;
+    private static int counter;
+    private int id = counter++;
 
     public Employee(String fullName, int department, double salary) {
         this.fullName = fullName;
